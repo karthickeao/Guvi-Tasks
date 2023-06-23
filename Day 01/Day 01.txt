@@ -1,0 +1,55 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+        1. Multiplexing and Stream Prioritization:
+        HTTP2 introduced a groundbreaking feature called multiplexing, which allows multiple requests and responses to be sent simultaneously over a single connection.
+        In contrast, HTTP1.1 followed a one-request-per-connection approach. 
+         Additionally, HTTP2 supports stream prioritization, enabling critical resources to be loaded first, resulting in faster and more efficient page rendering.
+
+        2. Header Compression:
+        In HTTP1.1, headers were sent with each request and response, leading to redundant data transfer and increased latency. 
+        HTTP2 utilizes header compression techniques, such as the HPACK algorithm, to significantly reduce overhead by compressing headers. 
+        This optimization improves network utilization and speeds up the overall communication between the client and server.
+
+        3. Server Push:
+        One of the standout features of HTTP2 is server push. In HTTP1.1, the server could only respond to client requests.
+        However, with server push in HTTP2, the server can proactively send additional resources to the client before they are requested. 
+        This approach reduces the need for multiple round trips, thereby enhancing performance and decreasing latency.
+
+        4. Binary Protocol:
+        While HTTP1.1 relied on plain text for its protocol, HTTP2 introduced a binary framing layer. 
+        By using a binary format, HTTP2 reduces parsing complexity and improves parsing speed. 
+        This change contributes to more efficient and faster communication between the client and server.
+
+        5. Connection Management:
+        HTTP1.1 used a new TCP connection for each request, resulting in additional latency due to the connection setup overhead.
+        HTTP2, on the other hand, allows for a single, long-lived connection between the client and server, reducing the need for frequent connection establishment. 
+        This persistent connection minimizes latency and facilitates better resource utilization.
+
+
+
+
+
+2. Write a blog about objects and its internal representation in Javascript
+
+
+1. Key-Value Pairs:
+   Objects in JavaScript are essentially collections of key-value pairs. 
+   The keys, also known as properties, are strings or symbols, while the corresponding values can be of any data type, including other objects. 
+   The internal representation of an object utilizes hash maps or similar data structures to efficiently store and retrieve these key-value pairs.
+
+2. Prototypes and Inheritance:
+   JavaScript objects have a built-in mechanism called prototype-based inheritance. 
+   Each object can have a prototype, which is another object from which it inherits properties and methods. 
+   This prototype chain allows for property and method lookup when accessing object properties. 
+   The internal representation of objects typically includes a reference to their prototype, enabling efficient inheritance and property resolution.
+
+3. Dynamic Properties:
+   Unlike some statically-typed languages, JavaScript objects are highly flexible when it comes to properties. 
+   They can be dynamically added, modified, or deleted at runtime. 
+   This dynamic nature of objects is facilitated by their internal representation, which allows for efficient manipulation of properties and their values.
+ 
+4. Memory Management:
+   The internal representation of objects also involves memory management considerations. 
+   JavaScript engines employ garbage collection mechanisms to automatically reclaim memory occupied by objects that are no longer in use. 
+   This process involves identifying objects that are no longer reachable and freeing up their memory resources. 
+   The internal representation of objects may include additional metadata to aid in efficient garbage collection and memory optimization.
