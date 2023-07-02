@@ -1,0 +1,35 @@
+//1.
+
+const jsonString1= '{"name":"person1","age":5}';
+const jsonString2= '{"age":5,"name":"person1"}';
+//2
+function compareJSON(jsonString1,jsonString2)
+{
+const parsedObject1=JSON.parse(jsonString1);
+const parsedObject2=JSON.parse(jsonString2);
+if(Object.keys(parsedObject1).length !=Object.keys(parsedObject2).length)
+{
+    return false;
+}
+//3
+for(let key in parsedObject1)
+{
+    if(!parsedObject2.hasOwnProperty(key)|| parsedObject1[key]!== parsedObject2[key])
+    {
+        return false;
+    }
+}
+for(let key in parsedObject2)
+{
+    if(!parsedObject1.hasOwnProperty(key)|| parsedObject2[key]!== parsedObject1[key])
+    {
+        return false;
+    }
+}
+return true;
+}
+const result= compareJSON(jsonString1,jsonString2);
+console.log(result);
+
+
+//2.refer src=index.html//
