@@ -1,0 +1,342 @@
+**Do the below programs in anonymous function & IIFE**
+
+1.Print odd numbers in an array
+    //anonymous function
+    var a=userInput[0].split("");
+    var odd=function(){
+        for(i=0;i<a.length;i++){
+        if(a[i]%2!=0)
+        {
+            console.log(a[i],"is odd");
+        }
+        else{
+            console.log(a[i],"is even");
+        }
+        }
+    }
+    odd();
+    //IIFE
+        var a=userInput[0].split("");
+    (function(){
+        for(i=0;i<a.length;i++){
+        if(a[i]%2!=0)
+        {
+            console.log(a[i],"is odd");
+        }
+        else{
+            console.log(a[i],"is even");
+        }
+        }
+    })();
+
+
+ 2.Convert all the strings to title caps in a string array
+//anonymous function
+       var display=function(string){
+        string="guvi geek";
+        {
+            var sentence = string.toLowerCase().split(" ");
+            for(var i = 0; i< sentence.length; i++){
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+        console.log(sentence.join(" "));
+        return sentence;
+        }
+        };
+        display();
+//IIFE
+         (function(string){
+        string="guvi geek";
+        {
+            var sentence = string.toLowerCase().split(" ");
+            for(var i = 0; i< sentence.length; i++){
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+        console.log(sentence.join(" "));
+        return sentence;
+        }
+        })();
+
+
+
+ 3.Sum of all numbers in an array 
+ //anonymous function  
+        userInput=[1,2];
+        var res=function(){
+        let sum = 0;
+        for (let i = 0; i<userInput.length;i++) {
+            sum += userInput[i];
+        }
+        
+        console.log(sum); 
+        }
+        res();
+
+ //IIFE  
+        userInput=[1,3];
+        (function(){
+        let sum = 0;
+        for (let i = 0; i<userInput.length;i++) {
+            sum += userInput[i];
+        }
+        
+        console.log(sum); 
+        })();
+
+
+
+ 4.Return all the prime numbers in an array  
+ //anonymous function   
+        var display=function(){
+            
+        var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+        numArray = numArray.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+        });
+
+        console.log(numArray);
+        }
+        display();
+ //IIFE 
+        (function(){
+            
+        var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10,17];
+
+        numArray = numArray.filter((number) => {
+        for (var i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) return false;
+        }
+        return true;
+        });
+
+        console.log(numArray);
+        })();
+
+
+
+5.Return all the palindromes in an array        
+ //anonymous function   
+        var display=function(){
+        let arr = ["1001", "racecar", "pineapple", "noon", "tenet",'pap','refer'];
+        let palindromes = arr.filter(w => {
+        let len = w.length;
+        for (let i = 0; i < len / 2; i++) {
+            if (w[i] == w[len - i - 1]) {
+            return true;
+            } else {
+            return false;
+            }
+        }
+
+        });
+        console.log(palindromes);
+        }
+        display();
+
+ //IIFE 
+ (function(){
+        let arr = ["1001", "racecar", "pineapple", "noon", "tenet",'pap','refer'];
+        let palindromes = arr.filter(w => {
+        let len = w.length;
+        for (let i = 0; i < len / 2; i++) {
+            if (w[i] == w[len - i - 1]) {
+            return true;
+            } else {
+            return false;
+            }
+        }
+
+        });
+        console.log(palindromes);
+        })();
+
+
+
+6.Return median of two sorted arrays of the same size.
+ //anonymous function   
+
+        var display=function(){
+        const median = (a1, a2) => {
+        let x = a1.concat(a2);
+        x.sort(function (a,b) {
+            return a - b;
+        });
+        let len = x.length;
+        
+        return len%2 === 0 ? (x[Math.floor(len/2)-1] + x[Math.ceil(len/2)])/2 : x[Math.floor(len/2)];
+
+        }
+
+        let a = [1,2,3];
+        let b = [4,5,6];
+        console.log(median(a,b));
+        }
+        display();
+ //IIFE 
+
+        (function(){
+        const median = (a1, a2) => {
+        let x = a1.concat(a2);
+        x.sort(function (a,b) {
+            return a - b;
+        });
+        let len = x.length;
+        
+        return len%2 === 0 ? (x[Math.floor(len/2)-1] + x[Math.ceil(len/2)])/2 : x[Math.floor(len/2)];
+
+        }
+
+        let a = [1,2,3];
+        let b = [5,6,7];
+        console.log(median(a,b));
+        })();
+
+
+
+7. Remove duplicates from an array
+ //anonymous function   
+        var display=function(){
+        let chars = ['A', 'B', 'A', 'C', 'B','d'];
+        let uniqueChars = [...new Set(chars)];
+
+        console.log(uniqueChars);
+        }
+        display();
+  //IIFE 
+        (function(){
+        let chars = ['A', 'B', 'A', 'C', 'B','d','guvi','GUVI'];
+        let uniqueChars = [...new Set(chars)];
+
+        console.log(uniqueChars);
+        })();
+
+
+
+8.Rotate an array by k times
+ //anonymous function
+        var RightRotate= function(a, n, k)
+        {
+            k = k % n;
+        
+            for (let i = 0; i < n; i++) {
+                if (i < k) {
+                    console.log(a[n + i - k] + " ");
+                }
+                else {
+                    console.log((a[i - k]) + " ");
+                }
+            }
+        console.log("<br>");
+        }
+        let Array = [1, 2, 3, 4, 5];
+        let N = Array.length;
+        let K = 3;
+        
+        RightRotate(Array, N, K); 
+   //IIFE 
+            (function(){
+        var RightRotate= function(a, n, k)
+                {
+                    k = k % n;
+                
+                    for (let i = 0; i < n; i++) {
+                        if (i < k) {
+                            console.log(a[n + i - k] + " ");
+                        }
+                        else {
+                            console.log((a[i - k]) + " ");
+                        }
+                    }
+                console.log("<br>");
+                }
+                var a = [1, 2, 3, 4, 5];
+                var N = a.length;
+                var K = 3;
+        
+                RightRotate(a, N, K);
+        })();
+
+
+**Do the below programs in arrow functions.**
+
+1.Print odd numbers in an array
+        var a=userInput[0].split("");
+            var odd=()=>{
+                for(i=0;i<a.length;i++){
+                if(a[i]%2!=0)
+                {
+                    console.log(a[i],"is odd");
+                }
+                else{
+                    console.log(a[i],"is even");
+                }
+                }
+            }
+            odd();
+
+
+2.Convert all the strings to title caps in a string array
+        var res=()=> (string)
+        string="guvi geek";
+        {
+            var sentence = string.toLowerCase().split(" ");
+            for(var i = 0; i< sentence.length; i++){
+                sentence[i] = sentence[i][0].toUpperCase() + sentence[i].slice(1);
+            }
+        console.log(sentence.join(" "));
+        return sentence;
+        }
+        res();
+
+
+3.Sum of all numbers in an array          
+        userIn=[1,2,2];
+                var res=()=>{
+                let sum = 0;
+                for (let i = 0; i<userIn.length;i++) {
+                    sum += userIn[i];
+                }
+                
+                console.log(sum); 
+                }
+                res();
+
+
+4.Return all the prime numbers in an array
+        var display=()=>{
+                    
+                var numArray = [2, 3, 4, 5, 6, 7, 8, 9, 10,17];
+
+                numArray = numArray.filter((number) => {
+                for (var i = 2; i <= Math.sqrt(number); i++) {
+                    if (number % i === 0) return false;
+                }
+                return true;
+                });
+
+                console.log(numArray);
+                }
+                display();
+
+                
+5.Return all the palindromes in an array
+            var display=()=>{
+                let arr = ["1001", "racecar", "pineapple", "noon", "tenet",'pap','refer'];
+                let palindromes = arr.filter(w => {
+                let len = w.length;
+                for (let i = 0; i < len / 2; i++) {
+                    if (w[i] == w[len - i - 1]) {
+                    return true;
+                    } else {
+                    return false;
+                    }
+                }
+
+                });
+                console.log(palindromes);
+                }
+                display();              
