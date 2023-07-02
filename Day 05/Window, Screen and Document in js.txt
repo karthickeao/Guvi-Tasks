@@ -1,0 +1,34 @@
+In JavaScript, the terms "window," "screen," and "document" refer to different objects and concepts related to 
+the web browser environment. Here's an explanation of each term and their differences:
+
+1. Window:
+In the context of JavaScript, the "window" object represents the browser window or tab in which the web page is loaded. 
+ It is the top-level object that contains the entire browsing context and provides various properties and methods for interacting with it. 
+ The "window" object is also the global object in client-side JavaScript, meaning that its properties and methods can be accessed directly without 
+ specifying "window" explicitly.
+
+For example, you can use the "window" object to access properties like "window.location" 
+(provides information about the current URL), "window.alert()" (displays an alert dialog), 
+or "window.setTimeout()" (sets a timer to execute a function after a specified delay).
+
+2. Screen:
+The "screen" object in JavaScript represents the user's screen or monitor.
+ It provides information about the user's display, such as its dimensions, color depth, 
+ and available screen space. The "screen" object is a property of the "window" object, 
+ so you can access it using "window.screen".
+
+You can utilize properties like "screen.width" (returns the width of the screen in pixels),
+ "screen.height" (returns the height of the screen in pixels), or "screen.availWidth"
+  (returns the available width excluding operating system features like the taskbar).
+
+3. Document:
+The "document" object represents the web page loaded within the browser window. 
+It provides access to the HTML content of the page and allows manipulation of its elements, styles, and 
+structure. The "document" object is also a property of the "window" object, and you can access it
+ using "window.document" or simply "document".
+
+With the "document" object, you can perform operations like accessing and modifying elements on the page,
+ manipulating styles, creating new elements dynamically, handling events, and more. 
+ For example, you can use methods like "document.getElementById()" to retrieve an element by its ID,
+  "document.createElement()" to create a new element, or "document.querySelector()" to select elements
+   using CSS-style selectors.
