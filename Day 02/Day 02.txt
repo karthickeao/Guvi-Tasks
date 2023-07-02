@@ -1,0 +1,11 @@
+1.Window Object
+*Window object is known as browser.
+*It act like a window to to show something like web pages or any tabs containing DOM documents.
+*It is top of the hierarchy and outmost element of the object hierarchy.
+
+
+2.Document Object
+*Document object is known as a Web page,web app,web site,or any tabs which all shown by the browser.
+*It points to the property of the DOM document which loaded in window.
+*Each HTML document loaded in window object is called document object.That document contains the content of the page.
+*DOM is a programming API for HTML and XML documents.
