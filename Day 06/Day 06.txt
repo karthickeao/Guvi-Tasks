@@ -1,0 +1,123 @@
+4.write a class to calculate the uber price.
+
+class Uber{
+    constructor(select){
+        this.any=select;
+    }
+    get Bike(){
+        return this.any;
+        //console.log( "starts from RS.54!!!");
+    }
+    get Auto(){
+        return this.any;
+       // console.log("starts from RS.130!!!");
+    }
+     get miniCar(){
+          return this.any;
+       // console.log("starts from RS.184!!!");
+    }
+    get primeSedanCar(){
+         return this.any;
+        //console.log("starts from RS.211!!!");
+    }
+        
+    }
+    let uberObj=new Uber("starts from RS.54!!!);
+    console.log(uberObj.Bike);
+     console.log(uberObj.Auto);
+      console.log(uberObj.miniCar;
+       console.log(uberObj.primeSedanCar);
+
+3.Write a “person” class to hold all the details.
+class Person{
+    constructor(name){
+        this.newName=name;
+    }
+    get Name(){
+        return this.newName;
+    }
+    set Name(nName){
+      this.newName=nName;
+    }
+}
+let obj=new Person("hand");
+console.log(obj.Name);
+obj.Name="guvi";
+console.log(obj.Name);
+
+2.https://github.com/rvsp/typescript-oops/blob/master/Practice/class-circle.md
+  class Circle {
+  constructor(radius, color) {
+    this.radius = radius;
+    this.color = color;
+  }
+  getRadius(){
+    return this.radius;
+    };
+  setRadius(value){
+    this.radius = value;
+    };
+  getColor(){
+    return this.color;
+    };
+  setColor(value){
+    this.color = value;
+    };
+  
+  getArea(){
+    return Math.PI * this.radius * this.radius;
+    };
+  getCircumference(){
+    return 2 * Math.PI * this.radius;
+    };
+}
+
+let cir = new Circle(1.0, "red");
+console.log(cir.getArea());
+console.log(cir.getCircumference());
+console.log(cir.getColor());
+console.log(cir.getRadius());
+
+1.https://github.com/rvsp/typescript-oops/blob/master/Practice/Movie.md
+
+class Movie {
+  constructor(title, studio, rating = "PG"){
+    this.firsttitle = title;
+    this.firststudio = studio;}
+   let pgMov = new Movie[mov.length];
+    var newArrayIndex = 0;
+ for (var i = 0; i < mov.length; i++)
+ {
+    if((mov[i].rating.rating === "PG")
+    {
+      pgMov[newArrayIndex] = mov[i];
+         newArrayIndex++;
+    }
+  }
+  return pgMov;
+  
+}
+ /* getPG(ipArr) {
+      public static Movie[] getPG(Movie[] mov) 
+      {
+ Movie[] pgMov = new Movie[mov.length];
+ var newArrayIndex = 0;
+ for (var i = 0; i < mov.length; i++)
+ {
+ if (mov[i].rating.equals(“PG”)) 
+ {
+ pgMov[newArrayIndex] = mov[i];
+ newArrayIndex++;
+ }
+ }
+ return pgMov;
+}
+    return this.firstrating="PG";
+  }
+}*/
+
+let film = new Movie("Casino Royale", "Eon Productions", "PG13");
+let ipArr = [{title:"", studio: "", rating: "PG1"},
+              {title:"", studio: "", rating: ""},
+              {title:"", studio: "", rating: ""}];
+film.getPG(pgMov);
