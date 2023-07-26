@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+  <center><h1 id="title">MY DOM CALCULATOR</h1>
+  <p id="description">DOM Calculater is ready!</p></center>
+   
+<div class="container">
+    <table class="calculator" >
+        <tr>
+          <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+       
+          <!-- clearScreen() function clears all the values -->
+          <!-- <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td> -->
+          <td><button id="clear" type="button" value="C" class="btn btn-primary" onclick="clearScreen()" id="btn">C</button></td>
+        </tr>
+        <tr>
+          <!-- display() function displays the value of clicked button -->
+          <td> <button id="1" type="button" value="1" class="btn btn-primary" onclick="display('1')">1</button></td>
+          <td> <button id="2" type="button" value="2" class="btn btn-primary" onclick="display('2')">2</button> </td>
+          <td> <button id="3" type="button" value="3" class="btn btn-primary" onclick="display('3')">3</button> </td>
+          <td> <button id="/" type="button" value="/" class="btn btn-primary" onclick="display('/')">/</button> </td>
+        </tr>
+        <tr>
+          <td> <button id="4" type="button" value="4" class="btn btn-primary" onclick="display('4')">4</button> </td>
+          <td> <button id="5" type="button" value="5" class="btn btn-primary" onclick="display('5')">5</button> </td>
+          <td> <button id="6" type="button" value="6" class="btn btn-primary" onclick="display('6')">6</button> </td>
+          <td> <button id="subtract" type="button" value="-" class="btn btn-primary" onclick="display('-')">-</button> </td>
+        </tr>
+        <tr>
+          <td> <button id="7" type="button" value="7" class="btn btn-primary" onclick="display('7')">7</button> </td>
+          <td> <button id="8" type="button" value="8" class="btn btn-primary" onclick="display('8')">8</button> </td>
+          <td> <button id="9" type="button" value="9" class="btn btn-primary" onclick="display('9')">9</button> </td>
+          <td> <button id="add" type="button" value="+" class="btn btn-primary" onclick="display('+')">+</button> </td>
+        </tr>
+        <tr>
+          <td> <button id="." type="button" value="." class="btn btn-primary" onclick="display('.')">.</button> </td>
+          <td> <button id="0" type="button" value="0" class="btn btn-primary" onclick="display('0')">0</button> </td>
+          <td> <button id="*" type="button" value="*" class="btn btn-primary" onclick="display('*')">*</button> </td>
+       
+          <!-- calculate() function evaluates the mathematical expression -->
+          <!-- <input  id="=" type="button" value="=" onclick="calculate()" id="btn" />  -->
+          <td> <button id="equal" type="button" value="=" class="btn btn-primary" onclick="calculate()">=</button></td>
+          
+           </tr>
+           
+      </table>
+    </div>
+      <script src="script.js"></script> 
+      <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+
+</body>
+</html>
