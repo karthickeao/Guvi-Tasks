@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+body{
+    background:blue;
+ 
+}
+b{
+  font-weight:500;
+}
+.head{
+  font-weight: 100;
+  color: gray;
+}
+
+.wrapper{
+  max-width: 1110px;
+  width: 500%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;  
+}
+
+.wrapper .table{
+  background: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.1); */
+  border-radius: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 1020px){
+  .wrapper .table{
+      width: calc(50% - 20px);
+      margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 698px){
+  .wrapper .table{
+      width: 100%;
+  }
+}
+
+.table .price-section{
+ display: block;
+ justify-content: center;
+}
+
+
+
+.price-section .price-area .inner-area{
+   line-height: 117px;
+ 
+}
+
+
+.price-area .inner-area .price{
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.table .features li{
+  list-style:none;
+  /* display:grid; */
+  text-align: left;
+   margin-bottom: 10px;
+}
+
+.table .btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.table .btn button{
+  width: 80%;
+  height: 50px;
+  font-weight: 700;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.basic .price-area,
+.basic .inner-area{
+  background: white;
+  }
+
+.basic .btn button{
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+}
+
+.basic .btn button:hover{
+  border-radius: 6px;
+  background: white;
+  color: blue;
+}
+
+.Premium .price-area,
+.Premium .inner-area{
+  background: white;
+}
+
+.Premium .btn button{
+  background:blue;
+  color: white;
+  border: 2px solid blue;
+}
+
+.Premium .btn button:hover{
+  border-radius: 6px;
+  background: white;
+  color: blue;
+}
+
+.Ultimate .price-area,
+.Ultimate .inner-area{
+  background: white;
+}
+
+.Ultimate .btn button{
+  background: blue;
+  color: white;
+  border: 2px solid blue;
+}
+
+.Ultimate .btn button:hover{
+  border-radius: 6px;
+  background: white;
+  color: blue;
+}
+.light{
+  color: gray;
+}
+.cross{
+  color: gray;
+}
+.tick{
+  color: black;
+}
