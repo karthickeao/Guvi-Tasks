@@ -1,0 +1,113 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 90vw;
+  margin: 30px auto;
+  background-color: #d8f2bd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(127, 127, 127, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.todo-card {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px;
+  max-width: 300px; /* Set a max width for each card */
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #f5e2c3;
+}
+
+.todo-card h3, .todo-card p {
+  margin: 5px 0;
+}
+
+/* Flexbox layout for cards */
+.todo-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+  .App {
+      margin: 20px 10px;
+      padding: 15px;
+  }
+
+  input, textarea, select {
+      font-size: 14px;
+  }
+  
+  button {
+      padding: 8px 12px;
+      font-size: 14px;
+      
+  }
+}
+
+@media (max-width: 480px) {
+  button {
+      display: block;
+      width: 100%;
+      margin-bottom: 5px;
+  }
+}
+
+/* Center the 'Add' button */
+.TodoInput > button {
+  display: block;
+  margin: 10px auto 0 auto; /* this will center the button */
+}
+
+/* Add some styling for the horizontal line break */
+hr {
+  width: 90%;
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
