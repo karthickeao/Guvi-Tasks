@@ -2,9 +2,18 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, Routes,Navigate   } from 'react-router-dom';
 import './App.css';
 import { useParams } from 'react-router-dom';
-
-
-
+import eao from "./assets/eao.jpg";
+import eao1 from "./assets/eao1.jpg";
+import eao2 from "./assets/eao2.jpg";
+import eao3 from "./assets/eao3.jpg";
+import eao4 from "./assets/eao4.jpg";
+import eao5 from "./assets/eao5.jpg";
+import eao6 from "./assets/eao6.jpg";
+import eao7 from "./assets/eao7.jpg";
+import eao8 from "./assets/eao8.jpg";
+import eao9 from "./assets/eao9.jpg";
+import eao10 from "./assets/eao10.jpg";
+import eao11 from "./assets/eao11.jpg";
 
 function App() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -61,19 +70,19 @@ const servicesDescription = {
       {
         question:'What is New business registration?',
         description: 'Start your business in 7 days online.Start your business in 7 days online.Start your business in 7 days online.Start your business in 7 days online.Start your business in 7 days online.Start your business in 7 days online.Start your business in 7 days online.',
-        image: '/./src/assets/eao.jpg',
+        image: eao,
         date: 'August 23, 2023'
       },
       {
         question:'What is  registration?',
         description: 'We offer consultancy for startups.We offer consultancy for startups.We offer consultancy for startups.We offer consultancy for startups.We offer consultancy for startups.We offer consultancy for startups.',
-        image: '/./src/assets/eao1.jpg',
+        image: eao1,
         date: 'August 24, 2023'
       },
       {
         question:'What is XXX registration?',
         description: 'Get your licenses and permits easily.',
-        image: '/./src/assets/eao2.jpg',
+        image: eao2,
         date: 'August 25, 2023'
       }
     ]
@@ -84,19 +93,19 @@ const servicesDescription = {
       {
         question:'What is Manage your business ?',
         description: 'Start your business in 7 days online.',
-        image: '/./src/assets/eao4.jpg',
+        image: eao3,
         date: 'August 23, 2023'
       },
       {
         question:'What is AAA your business ?',
         description: 'We offer consultancy for startups.',
-        image: '/./src/assets/eao5.jpg',
+        image: eao4,
         date: 'August 24, 2023'
       },
       {
         question:'What is YYY your business ?',
         description: 'Get your licenses and permits easily.',
-        image: '/./src/assets/eao6.jpg',
+        image: eao5,
         date: 'August 25, 2023'
       }
     ]
@@ -107,19 +116,19 @@ const servicesDescription = {
       {
         question:'What is GST registration?',
         description: 'Start your business in 7 days online.',
-        image: '/./src/assets/eao7.jpg',
+        image:eao6,
         date: 'August 23, 2023'
       },
       {
         question:'What is KKK your business ?',
         description: 'We offer consultancy for startups.',
-        image: '/./src/assets/eao8.jpg',
+        image:eao7 ,
         date: 'August 24, 2023'
       },
       {
         question:'What is Manage your business ?',
         description: 'Get your licenses and permits easily.',
-        image: '/./src/assets/eao9.jpg',
+        image: eao8,
         date: 'August 25, 2023'
       }
     ]
@@ -130,19 +139,19 @@ const servicesDescription = {
       {
         question:'What is Grow Your Business?',
         description: 'Get your GST Registration in 1 day with Expert Assistant.',
-        image: '/./src/assets/eao10.jpg',
+        image: eao9,
         date: 'August 23, 2023'
       },
       {
         question:'What is LLL Your Business?',
         description: 'We offer consultancy for startups.',
-        image: '/./src/assets/eao11.jpg',
+        image: eao10,
         date: 'August 24, 2023'
       },
       {
         question:'What is EEE Business?',
         description: 'Get your licenses and permits easily.',
-        image: '/./src/assets/eao12.jpg',
+        image:eao11,
         date: 'August 25, 2023'
       }
     ]
