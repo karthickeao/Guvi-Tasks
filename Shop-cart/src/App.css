@@ -1,0 +1,166 @@
+
+
+.product-grid {
+    display: flex;
+    flex-wrap:wrap;
+   padding: 75px;
+    max-width: auto;
+    margin: 8px auto;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    flex: 0 0 calc(25% - 10px);
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.product img {
+    width: 350px;
+    height: 300px;
+    margin-bottom: 10px;
+    
+
+}
+
+.product h3 {
+    height: 3em; /* to allow 2 lines of text */
+    overflow: hidden;
+    text-align: center; /* Center the text */
+    width: 100%;
+}
+
+.product-price, .cart-btn {
+    margin-top: auto;
+    text-align: center;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .product {
+        flex: 0 0 calc(50% - 10px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .product {
+        flex: 0 0 100%;
+    }
+}
+
+
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.app-header nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.app-header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.app-header nav a:hover {
+    color: #007bff;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.cart-count {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    margin-right: 5px;
+    font-size: 14px;
+}
+/* ... existing styles ... */
+
+.app-footer {
+    background-color: #f7f7f7;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+    text-align: center; /* This will center the text inside the footer */
+}
+
+.app-footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}
+/* ... existing styles ... */
+
+.landing-section {
+    background-color: #e0e0e0; /* Grey background */
+    padding: 60px 0; /* Padding for space above and below the content */
+    text-align: center; /* Centering the text */
+    color: #333; /* Darker text for better contrast against grey */
+}
+
+.landing-section h1 {
+    font-size: 2.5em; /* Bigger font for the main title */
+    margin-bottom: 20px; /* Space between title and tagline */
+    font-weight: bold; /* Bold text for emphasis */
+}
+
+.landing-section p {
+    font-size: 1.5em; /* Slightly bigger font for the tagline */
+    font-style: italic; /* Italic style for a touch of elegance */
+}
+
+
